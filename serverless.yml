@@ -2,8 +2,9 @@ service:
   name: aws-node-typescript-rest-template
 
 custom:
-  webpackConfig: ./webpack.config.js
-  includeModules: true
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
 
 plugins:
   - serverless-webpack
